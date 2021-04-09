@@ -13,6 +13,7 @@ class NewsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
 
+        // Setting up the BottomNavigationView with a NavController to enable movement between the fragments.
         bottomNavigationView.setupWithNavController(newsNavHostFragment.findNavController())
     }
 }
